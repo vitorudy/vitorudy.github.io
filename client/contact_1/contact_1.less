@@ -1,0 +1,196 @@
+@import url('../lib/variables.import.less');
+
+
+.contact_form {
+  width:400px;
+  margin:auto;
+  padding-bottom: 65px;
+}
+
+.address-details{
+  width: 375px;
+  padding-top: 50px;
+  margin:auto;
+}
+
+.adr_icon {
+  width:20px;
+  display:inline-block;
+  float:left;
+  margin-right: 10px;
+}
+
+.icn-float {
+  padding-left: 30px;
+  font-size: 12px;
+}
+.map {
+  margin-top: 40px;
+}
+
+/* form starting stylings ------------------------------- */
+.group        {
+  position:relative;
+  margin-bottom:45px;
+}
+input         {
+  font-size:18px;
+  background: none;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:435px;
+  border:none;
+  color: #0C4572;
+  border-bottom:1px solid #666;
+      -webkit-appearance: none;
+    border-radius: 0;
+}
+input:focus     { outline:none; }
+
+/* LABEL ======================================= */
+label          {
+  color:#999;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label    {
+  top:-20px;
+  font-size:14px;
+  color:#1366a8;
+}
+
+/* active state */
+input[type="email"]:focus ~ label, input[type="email"]:valid ~ label    {
+  top:-20px;
+  font-size:14px;
+  color:#1366a8;
+}
+
+/* TEXTAREA ======================================*/
+
+textarea         {
+  font-size:14px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:435px;
+  border:none;
+  color: #333;
+  resize:none;
+  background: none;
+  border-bottom:1px solid #999;
+      -webkit-appearance: none;
+    border-radius: 0;
+    overflow: hidden;
+}
+textarea:focus     { outline:none; }
+
+
+textarea ~ label          {
+  color:#999;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+textarea:focus ~ label ,textarea:valid ~ label    {
+  top:-15px;
+  font-size:14px;
+  color:#3b99fc;
+}
+
+
+/* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:435px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#1366a8;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight, textarea:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+
+.jfk-button {
+width:65%;
+margin:auto;
+border:none;
+text-transform: uppercase;
+background: #5fb42d;
+transition: all .3s ease;
+color:white;
+}
+
+.jfk-button:hover {
+  background: #83c031;
+}
+.jfk-button:active {
+  background:#3c962b;
+}
+
+
+
+
+
+

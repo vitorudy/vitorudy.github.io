@@ -1,0 +1,65 @@
+template(name="contact_1")
+
+  section.contact-form
+    .container
+      .row
+
+        .col-xs-12.col-md-5.col-md-push-7.address-details
+          p.subheading Do not hesitate to contact us by filling out our contact form or get in touch by mail or phone that is provided below.
+          .row
+            .col-xs-6.col-md-8
+              h3.feat-title Our headquaters
+              .address
+                img.adr_icon(src="http://i.imgur.com/PT1sSCt.png" alt="Location")
+                p.subheading.icn-float Tapfuse Limited<br> Bradley Lynch Court, 29 <br> London, UK
+              .address
+                img.adr_icon(src="http://i.imgur.com/LMuuToV.png" alt="Email")
+                p.subheading.icn-float info@tapfuse.io
+              .address
+                img.adr_icon(src="http://i.imgur.com/z91Fwm7.png" alt="Phone")
+                p.subheading.icn-float +44 111 222 222
+            .col-xs-6.col-md-4
+              img.map(src="http://i.imgur.com/PTZRIne.png" alt="Headquaters")
+
+
+
+
+        .col-xs-12.col-md-7.col-md-pull-5
+          .contact_form
+            h1.title Contact us to get your personal demo
+            script(type='text/javascript').
+              var submitted=false;
+            iframe#hidden_iframe(name='hidden_iframe', style='display:none;', onload="if(submitted)\
+            {window.location='http://surveyform.github.io/thankyou.html';}")
+            form#contact_form(action='https://docs.google.com/a/tapfuse.io/forms/d/1JAGioo8ple6Ev51lnp5He_UB5WUu-oP4IH1ONbgY7Zc/formResponse', method='post', target='hidden_iframe', onsubmit='submitted=true; return formValidation()', name='eventSpark contact form')
+              .group
+                input#entry_514303774.ss-q-short(type='text', name='entry.514303774', value='', dir='auto', aria-label='Full name  ', aria-required='true', required='', title='')
+                span.highlight
+                span.bar
+                label  Full name
+              .group
+                input#entry_986273098.ss-q-short(type='text', name='entry.986273098', value='', dir='auto', aria-label='Company name  ', aria-required='true', required='', title='')
+                span.highlight
+                span.bar
+                label  Name of your company
+              .group
+                input#entry_1402798169.ss-q-short(type='text', name='entry.1402798169', value='', dir='auto', aria-label='Phone number  ', aria-required='true', required='', title='')
+                span.highlight
+                span.bar
+                label  Phone number
+              .group
+                input#entry_1495031352.ss-q-short(type='email', name='entry.1495031352', value='', dir='auto', aria-label='Email  Must be a valid email address', aria-required='true', required='', title='')
+                span.highlight
+                span.bar
+                label  Your  email
+              .group
+                textarea#entry_870436648.ss-q-short(type='text', name='entry.870436648', value='', dir='auto', aria-label='Your message  ', aria-required='true', required='', title='')
+                span.highlight
+                span.bar
+                label  Your  message
+
+              input#ss-submit.jfk-button.jfk-button-action(type='submit', name='submit', value='Submit')
+
+
+
+

@@ -1,0 +1,45 @@
+template(name="navbar")
+
+  .navbar.navbar-fixed-top
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(hreff="#") eventSpark
+      #navbar.navbar-collapse.collapse
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='../navbar/') Default
+          li
+            a(href='../navbar-static-top/') Static top
+          li.active
+            a(href='./')
+              | Fixed top
+              span.sr-only (current)
+
+
+
+
+  //- .topbar
+  //-       .menu
+  //-         img.logo(src="http://i.imgur.com/J8ON16l.png", alt="eventSpark")
+  //-         nav.navbar
+  //-           ul.l-inline-list
+  //-             li
+  //-               a
+  //-                 | home
+  //-             li
+  //-               a
+  //-                 | features
+  //-             li
+  //-               a
+  //-                 | brochure
+  //-             li
+  //-               a
+  //-                 | contact us
+  //-             li
+  //-               a.request
+  //-                 | request demo
